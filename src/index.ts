@@ -5,6 +5,7 @@ import startDbConnection from './database/config';
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 startDbConnection();
 
 app.listen(port, () => {
