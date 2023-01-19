@@ -1,4 +1,7 @@
 import express from 'express';
+import config from './config';
 const app = express();
-const port = 500;
-app.listen(port, () => console.log(`Server listening on port: ${port}`));
+
+app.listen(config.port, () => {
+    console.log(`Server listening on port: ${config.port}`)
+});
